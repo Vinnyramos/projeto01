@@ -1,0 +1,35 @@
+<div>
+    <md-toolbar class="md-hue-2">
+        <div class="md-toolbar-tools">
+            <md-button class="md-icon-button" aria-label="Settings" ng-click="controller.abrirMenu()">
+                <md-icon md-svg-icon="assets/img/icons/ic_dehaze_white_36px.svg"></md-icon>
+            </md-button>
+            <h2>
+                <span>Cliente</span>
+            </h2>
+            <span flex></span>
+        </div>
+    </md-toolbar>
+
+    <md-sidenav class="md-sidenav-left" md-component-id="left">
+        <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools">Menu</h1>
+        </md-toolbar>
+        <md-content layout-margin>
+            <md-list-item ng-click="controller.vaiParaHome()">Home</md-list-item>
+            <md-list-item ng-click="controller.vaiParaAgenda()">Listar Contatos</md-list-item>
+        </md-content>
+    </md-sidenav>
+    <div>
+        <md-input-container>
+            <label>Nome</label>
+            <input ng-model="controller.cliente.nome">
+        </md-input-container>
+
+        <md-input-container>
+            <label>CPF</label>
+            <input ng-model="controller.cliente.cpf">
+        </md-input-container>
+        <md-button class="md-raised md-primary" ng-click="controller.addCliente()">Adiciona Cliente</md-button>
+    </div>
+</div>

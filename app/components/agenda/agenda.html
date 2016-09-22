@@ -1,0 +1,16 @@
+<div ng-init="listaTodosContatos()">
+
+    <span>Tabela do Banco de Dados</span>
+    <table title="">
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Cpf</th>
+        </tr>
+        <tr ng-repeat="cliente in listaCliente">
+            <td>{{ cliente.id }}</td>
+            <td>{{ cliente.nome }}</td>
+            <td>{{ cliente.cpf}}</td>
+        </tr>
+    </table>
+</div>
